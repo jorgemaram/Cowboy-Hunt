@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+    <div id='game-board'>
+        <button id="start-button">Start Game</button>
+        <button id="restart-button" hidden='true'>Restart Game</button>
+        <button id="restart-button2" hidden='true'>Restart Game</button>
+        <canvas id="myCanvas" width='882' height="600" style="background: url('images/fondo-vaquero-2.png');">
+        </canvas>
+        <div class="game-intro">
+            <img src="./images/88523.png" alt="start game logo" class="logo-img" style="display: none" />
+        </div>
+        <div class="game-over">
+            <img src="./images/gameover.png" alt="game over logo" class="gameover-img" style="display: none" />
+        </div>
+        <div class="win-game">
+            <img src="./images/885WIN.png" alt="win game logo" class="win-img" style="display: none" />
+        </div>
+        <audio id="intro" src="./sounds/Cowboy_Theme.mp3" autoplay></audio>
+        <audio id="shoot" src="./sounds/disparoCortado.mp3" autoplay></audio>
+        <audio id="win" src="./sounds/Yahoo.mp3" autoplay></audio>
+        <audio id="lose" src="./sounds/game-over.mp3" autoplay></audio>
+    </div>
+
+    <script type="text/javascript" src='js/background.js'></script>
+    <script type="text/javascript" src='js/rocks.js'></script>
+    <script type="text/javascript" src='js/enemies.js'></script>
+    <script type="text/javascript" src='js/player.js'></script>
+    <script type="text/javascript" src='js/game.js'></script>
+    <script type="text/javascript" src='js/index.js'></script>
+</body>
+
+</html>

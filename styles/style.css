@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+background-repeat: no-repeat;
+text-align: center;
+}
+
+canvas{
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+.logo-img{
+  display: none;
+}
+
+.gameover-img{
+  background: url('./images/gameover.png');
+  
+}
+
+#start-button {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 350px;
+  font-size: 30px;
+  background-color: #985411;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+#game-board {
+    float: center;
+    padding: 20px 0px;
+    background-size: auto;
+}
+
+#restart-button{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 331px;
+  font-size: 30px;
+  background-color: #985411;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  opacity: .6;
+}
+
+#restart-button2{
+  position: absolute;
+  margin-top: 442px;
+  margin-left: 331px;
+  font-size: 30px;
+  background-color: #985411;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  opacity: .6;
+}
