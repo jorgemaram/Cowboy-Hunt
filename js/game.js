@@ -1,5 +1,5 @@
 const gameApp = {
-    name: 'Cowboy hunt app',
+    name: 'Cowboy hunter',
     description: 'Canvas app for basic shapes controlling',
     version: '1.0.0',
     license: undefined,
@@ -117,10 +117,10 @@ const gameApp = {
     },
 
     createEnemies() {
-        const enemies1 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 100, this.canvasSize.h - 250, 100, 100, 2, 'cowboy4.png', this.canvasSize.h - 285)
-        const enemies2 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 860, this.canvasSize.h - 240, 100, 100, 3, 'cowboy4.png', this.canvasSize.h - 285)
-        const enemies3 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 390, this.canvasSize.h, 100, 100, 2, 'cowboy4.png', this.canvasSize.h - 250)
-        const enemies4 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 630, this.canvasSize.h - 180, 100, 100, 3, 'cowboy4.png', this.canvasSize.h - 230)
+        const enemies1 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 100, this.canvasSize.h - 250, 100, 100, 2, 'Cowboy4.png', this.canvasSize.h - 285)
+        const enemies2 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 860, this.canvasSize.h - 240, 100, 100, 3, 'Cowboy4.png', this.canvasSize.h - 285)
+        const enemies3 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 390, this.canvasSize.h, 100, 100, 2, 'Cowboy4.png', this.canvasSize.h - 250)
+        const enemies4 = new Enemies(this.ctx, this.canvasSize, this.canvasSize.w - 630, this.canvasSize.h - 180, 100, 100, 3, 'Cowboy4.png', this.canvasSize.h - 230)
         const enemigosLocales = [enemies1, enemies2, enemies3, enemies4]
         this.enemies.push(enemigosLocales[Math.floor(Math.random() * 4)])
     },
@@ -186,7 +186,6 @@ const gameApp = {
         this.winningSound()
         const winning = document.querySelector('.win-img')
         this.ctx.drawImage(winning, 0, 0, this.canvasSize.w, this.canvasSize.h)
-        document.getElementById('intro').stop()
     },
 
     checkCollision() {
